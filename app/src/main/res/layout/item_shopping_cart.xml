@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_8dp"
+    android:layout_marginEnd="@dimen/space_8dp"
+    android:elevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_store"
+        android:padding="@dimen/space_2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/tv_store"
+            style="@style/style_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_8dp"
+            android:text="@string/storeName"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_menu_name"
+            style="@style/style_text"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_16dp"
+            android:text="@string/menuName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_store" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/style_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_8dp"
+            android:text="@string/amount"
+            app:layout_constraintTop_toTopOf="@+id/tv_menu_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_menu_name"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/style_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_8dp"
+            android:text="@string/price"
+            app:layout_constraintTop_toTopOf="@+id/tv_amount"
+            app:layout_constraintStart_toEndOf="@+id/tv_amount"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

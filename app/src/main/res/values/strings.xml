@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FoodpandaFake</string>
+    <string name="store">店家</string>
+    <string name="shoppingCart">購物車</string>
+    <string name="shoppingCartHistory">購物車歷史</string>
+    <string name="reportAProblem">回報</string>
+    <string name="cancel">取消</string>
+    <string name="addShoppingCart">加入購物車</string>
+    <string name="checkout">結帳</string>
+    <string name="goToShoppingCart">前往購物車</string>
+    <string name="menuName">菜單名</string>
+    <string name="amount">數量</string>
+    <string name="storeName">店家名</string>
+    <string name="price">價格</string>
+    <string name="sum">總共 %1$d</string>
+    <string name="buy">送單</string>
+    <string name="numberMenuLabel">x %1$d</string>
+    <string name="camera">拍照</string>
+    <string name="photo">相舖</string>
+</resources>

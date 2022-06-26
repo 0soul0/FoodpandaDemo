@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--   id 要對應 nav fragment id -->
+    <item
+        android:id="@+id/storeFragment"
+        android:icon="@drawable/ic_store"
+        android:title="@string/store" />
+<!--    <item-->
+<!--        android:id="@+id/shoppingCartFragment"-->
+<!--        android:icon="@drawable/ic_shopping_cart"-->
+<!--        android:title="@string/shoppingCart" />-->
+    <item
+        android:id="@+id/shoppingCartHistoryFragment"
+        android:icon="@drawable/ic_shopping_cart_history"
+        android:title="@string/shoppingCartHistory" />
+    <item
+        android:id="@+id/reportAProblemFragment"
+        android:icon="@drawable/ic_report"
+        android:title="@string/reportAProblem" />
+</menu>

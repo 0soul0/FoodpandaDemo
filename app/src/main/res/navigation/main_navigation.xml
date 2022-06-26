@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/storeFragment">
+
+    <fragment
+        android:id="@+id/storeFragment"
+        tools:layout="@layout/fragment_shopping_cart"
+        android:name="com.sideproject.foodpandafake.fragment.StoreFragment"
+        android:label="StoreFragment" />
+    <fragment
+        android:id="@+id/shoppingCartHistoryFragment"
+        tools:layout="@layout/fragment_shopping_cart_history"
+        android:name="com.sideproject.foodpandafake.fragment.ShoppingCartHistoryFragment"
+        android:label="ShoppingCartHistoryFragment" />
+    <fragment
+        android:id="@+id/reportAProblemFragment"
+        tools:layout="@layout/fragment_report"
+        android:name="com.sideproject.foodpandafake.fragment.ReportAProblemFragment"
+        android:label="ReportAProblemFragment" />
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        tools:layout="@layout/fragment_shopping_cart"
+        android:name="com.sideproject.foodpandafake.fragment.ShoppingCartFragment"
+        android:label="ShoppingCartFragment" />
+    <fragment
+        android:id="@+id/storeMenuFragment"
+        tools:layout="@layout/fragment_store_menu"
+        android:name="com.sideproject.foodpandafake.fragment.StoreMenuFragment"
+        android:label="StoreMenuFragment" />
+</navigation>
