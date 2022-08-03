@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -101,11 +102,14 @@ class ShoppingCartFragment : Fragment(R.layout.fragment_shopping_cart) {
     @SuppressLint("MissingPermission")
     private fun setGoogleMap() {
         if (!PermissionUtil().getLocalAndSetupPermission(requireActivity())) {
+            Log.d("ShoppingCartFragment", "setGoogleMap: getLocalAndSetupPermission")
             return
         }
+        Log.d("ShoppingCartFragment", "setGoogleMap: PermissionUtil ok")
         if (mainViewModel.visitStoreGPSPosition.isEmpty()) {
             return
         }
+        Log.d("ShoppingCartFragment", "setGoogleMap: visitStoreGPSPosition ok")
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.fragment_google_map) as SupportMapFragment
         supportMapFragment.getMapAsync { google ->

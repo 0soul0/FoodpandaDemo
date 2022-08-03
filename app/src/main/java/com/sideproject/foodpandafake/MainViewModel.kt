@@ -57,7 +57,6 @@ class MainViewModel @Inject constructor(
         return foodPanda
     }
 
-
     fun getMenu(position: Int, storeId: UUID): LiveData<List<Menu>> =
         runBlocking {
             initMenu(storeId)
@@ -89,7 +88,6 @@ class MainViewModel @Inject constructor(
             appDb.shoppingCartDao.insert(shoppingCart)
         }
     }
-
 
     fun getShoppingCart(
         stateConsumption: StateConsumption

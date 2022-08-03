@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.sideproject.foodpandafake.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 
 
 @AndroidEntryPoint
@@ -32,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         setupBottomNavMenu()
         observeBottomNavState()
         setToolbarTitle()
+
     }
 
     private fun bindNav() {
@@ -60,7 +63,6 @@ class MainActivity : AppCompatActivity() {
             binding.bottomNavView.visibility = it
         }
     }
-
 
     private fun setToolbarTitle() {
         setSupportActionBar(findViewById(R.id.toolbar_title))

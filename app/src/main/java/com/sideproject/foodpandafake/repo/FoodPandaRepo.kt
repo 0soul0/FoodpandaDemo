@@ -2,6 +2,7 @@ package com.sideproject.foodpandafake.repo
 
 import android.content.Context
 import android.graphics.Bitmap
+import android.util.Log
 import com.bumptech.glide.Glide
 import com.sideproject.foodpandafake.hilt.Config
 import com.sideproject.foodpandafake.model.Store
@@ -38,7 +39,11 @@ class FoodPandaRepo(private val foodPanda: FoodPanda) {
                     .getValue("src")
                 var img: Bitmap? = null
                 if (index < 30) {
-                    img = Glide.with(context).asBitmap().load(imgUrl).submit().get()
+                    try {
+                        img = Glide.with(context).asBitmap().load(imgUrl).submit().get()
+                    }catch (e:Exception){
+
+                    }
                 }
                 val random = Random.nextDouble(-0.03, 0.03)
                 val storePosition = listOf(gpsPosition[0] + random, gpsPosition[1] + random)
