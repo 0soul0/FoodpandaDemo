@@ -8,12 +8,6 @@
 width="120" height="240" src="https://user-images.githubusercontent.com/16238242/182600352-73efcd29-8c32-4db2-bfaf-e4041ca337d3.mp4" >
 </video>
 
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-
 <h3>功能</h3>
 <ul>
 <li>1.顯示商家資訊(Page3 實現上滑loading)</li>
