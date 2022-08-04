@@ -19,7 +19,7 @@ width="120" height="240" src="https://user-images.githubusercontent.com/16238242
 </ul>
 
 <h3>使用技術</h3>
-<p>Android、Kotlin、MVVM、Jetpack(Room、Hilt、Navigation、Page3、Retrofit、LiveData)、Coroutine</p>
+<p>Android、Kotlin、MVVM、Android Jetpack(Room、Hilt、Navigation、Page3、Retrofit、LiveData)、Coroutine</p>
 
 <h3>第三方串接Api</h3>
 <p>google map api https://developers.google.com/maps/gmp-get-started?hl=zh-tw</p>
