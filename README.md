@@ -15,7 +15,7 @@ width="120" height="240" src="https://user-images.githubusercontent.com/16238242
 <li>3.點餐送出,並顯示商家假的位置(google map)</li>
 <li>4.顯示歷史訂單</li>
 <li>5.拍照回報問題</li>
-<li>6.回報相舖照片</li>
+<li>6.回報相簿照片</li>
 </ul>
 
 <h3>使用技術</h3>
