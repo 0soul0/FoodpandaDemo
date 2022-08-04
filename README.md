@@ -1,7 +1,7 @@
 <h2>FoodpandaDemo簡易訂單app</h2>
 
 <h3>簡述</h3>
-<p>直接爬蟲於foodpanda官網商家資訊,並設定簡易的訂單系統</p>
+<p>直接爬蟲於foodpanda官網商家資訊,並開發簡易的訂單系統</p>
 
 <h3>Video Demo</h3>
 <video 
